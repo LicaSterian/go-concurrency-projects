@@ -1,9 +1,12 @@
 # Go Concurrency Projects
 
-### slice-search/linear and slice-search/concurrent
+### slice-search/sequential
 
-These projects mark the difference of searching linear and concurrently in a slice of 10 million entries.
-The entry that it needs to find is the last one in the slice, highlighting the worst time complexity.
+This project searches for a specific entry in a slice of 10 million entries by checking for a match one entry at a time.
+
+### slice-search/concurrent
+
+This project searches for a specific entry in a slice of 10 million entries concurrently. It check's how many CPU's your machine has, splits the slice into the number of CPU's you have.
 
 ### cp/files
 
